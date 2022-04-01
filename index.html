@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Library App</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Library App</h1>
+			<button data-addbook>Add New Book</button>
+		</header>
+		<main>
+			<div class="container-grid" data-display></div>
+		</main>
+		<footer>
+			<p>&copy; 2022</p>
+		</footer>
+		<div class="modal" id="myModal">
+			<form action="#" id="addbook-form">
+				<h3>Add New Book</h3>
+				<span class="close">&times;</span>
+				<input type="text" id="title" placeholder="Title" required />
+				<input type="text" id="author" placeholder="Author" required />
+				<input type="number" id="pages" placeholder="Pages" required />
+				<label for="is-read">Have you read it?</label>
+				<input class="checkbox" type="checkbox" id="isRead" />
+				<button id="addbook">Add Book to Library</button>
+			</form>
+		</div>
+	</body>
+</html>
